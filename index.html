@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/favicon-32x32.png" type="image/png">
+    <title>Dev Finder</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="content__container">
+            <header class="header__container">
+                <div class="logo">
+                    <h1 class="logo__text">devfinder</h1>
+                </div>
+                <div class="button__group">
+                    <button class="btn__switch-theme js-btn-toggle">
+                        <!-- <span><img class="js-icon" src="" alt=""></span> -->
+                        </button>
+                </div>
+            </header>
+            <form class="search__container js-form">
+                <i class="search__icon"><img src="./assets/icon-search.svg" alt="search icon"></i>
+                <label for="search" class="search__label screenreader-hidden"> Search for GitHub username</label>
+                <input id="search" type="search" class="search__input js-search" placeholder="Search GitHub username..."
+                    name="search">
+                <p class="error__message js-error">No results</p>
+                <button class="search__button" type="submit">Search</button>
+            </form>
+            <div class="profile">
+                <div class="profile__intro">
+                    <img class="profile__img js-profile-img">
+                    <div class="profile__info">
+                        <h1 class="profile__name js-name"></h1>
+                        <h3 class="profile__username js-username"></h3>
+                        <p class="profile__joining-date js-date"></p>
+                    </div>
+                </div>
+                <div class="profile__bio">
+                    <p class="bio__text js-bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                        Quisque
+                        volutpat mattis eros.</p>
+                </div>
+                <div class="profile__stats">
+                    <div class="profile__repos">
+                        <h4 class="text">Repos</h4>
+                        <h2 class="number js-repos"></h2>
+                    </div>
+                    <div class="profile__followers">
+                        <h4 class="text">Followers</h4>
+                        <h2 class="number js-followers"></h2>
+                    </div>
+                    <div class="profile__following">
+                        <h4 class="text">Following</h4>
+                        <h2 class="number js-following"></h2>
+                    </div>
+                </div>
+                <div class="profile__links">
+                    <div class="location__container">
+                        <svg class="icon">
+                            <use xlink:href="./assets/icon-location.svg#location"></use>
+                        </svg>
+                        <p class="location js-location"></p>
+
+                    </div>
+                    <div class="website__container">
+                        <svg class="icon">
+                            <use xlink:href="./assets/icon-website.svg#website"></use>
+                        </svg>
+                        <a class="website__link link js-website"></a>
+                    </div>
+                    <div class="twitter__container">
+                        <svg class="icon">
+                            <use xlink:href="./assets/icon-twitter.svg#twitter"></use>
+                        </svg>
+                        <a class="twitter link js-twitter"></a>
+                    </div>
+                    <div class="company__container">
+                        <svg class="icon">
+                            <use xlink:href="./assets/icon-company.svg#company"></use>
+                        </svg>
+                        <a class="company link js-company"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/theme.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
