@@ -254,6 +254,7 @@ body {
       
   }
   .profile__name{
+      color:var(--logo-color);
       font-weight: 700;
       line-height:1.5;
       font-size: 16px;
@@ -284,6 +285,7 @@ body {
     font-size: 11px;
   }
   .number{
+    color:var(--logo-color);
     line-height: 1.5;
     font-size: 16px;
     font-weight: 700;
