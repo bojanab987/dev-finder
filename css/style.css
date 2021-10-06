@@ -3,6 +3,7 @@ body {
     --text-color-darkGrey: #2B3442;
     --text-color-lightGrey:#697C9A;
     --logo-color: #222731;
+    --button-hover:#222731;
 
     --primary-white:#FFFFFF;
     --primary-blue:#0079FF;
@@ -23,6 +24,7 @@ body {
     --background-content:#1e2a47;
     --text-color-primary:#FFFFFF;
     --logo-color:#FFFFFF;
+    --button-hover:#90A4d4;
     --shadow:none;
     
     --content:'light';
@@ -118,6 +120,15 @@ body {
       justify-content: space-between;       
   }
 
+  .btn__switch-theme:hover{
+    cursor:pointer;
+    color:var(--button-hover);
+  }
+
+  .btn__switch-theme:hover::after{
+    background-color: var(--button-hover);
+  }
+
   .btn__switch-theme{
     font-size:13px;
     letter-spacing: 2.5px;
@@ -141,8 +152,7 @@ body {
     mask-size: cover;
     background-color: var(--text-color-primary);
     background-size: 20px 20px;
-    display: inline-flex; 
-       
+    display: inline-flex;        
     width:20px;
     height: 20px;
   }
